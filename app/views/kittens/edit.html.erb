@@ -1,0 +1,10 @@
+<h1> Edit <%= @kitten.name%> </h1>
+
+<%= render partial: 'form'%>
+
+<p>
+<%= link_to 'Delete cat', kitten_path(@kitten), method: :delete%>
+</p>
+<p>
+<%= link_to 'All Cats', kittens_path%>
+</p>

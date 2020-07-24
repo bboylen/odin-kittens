@@ -1,0 +1,12 @@
+<h1>Page for <%=@kitten.name%></h1>
+
+What a cat. At the tender age of <%=@kitten.age%>, 
+<%=@kitten.name%> clocks in at a cuteness of <%=@kitten.cuteness%>
+with a softness of <%=@kitten.softness%>, just fantastic. 
+
+<p>
+<%= link_to 'Delete cat', kitten_path(@kitten), method: :delete%>
+</p>
+<p>
+<%= link_to 'All Cats', kittens_path%>
+</p>
